@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone {
+  height: 900px;
+  width: 500px;
+  background-color: black;
+  border-radius: 20px;
+}
+.input-sec {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+input {
+  width: 95%;
+  height: 50px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+  box-shadow: none;
+  border: none;
+}
+.middle {
+  height: 10%;
+  width: 90%;
+  display: flex;
+  margin: 30px;
+  gap: 250px;
+  border-bottom: 1px solid grey;
+  align-items: center;
+}
+.clock {
+  margin-right: 30px;
+}
+.ruler {
+  margin-right: 30px;
+}
+.math {
+  margin-right: 30px;
+}
+.btn-sec {
+  height: 70%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 100px);
+  justify-content: center;
+  gap: 15px;
+}
+.btn {
+  background-color: rgb(34, 34, 34);
+  border-radius: 100%;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grey {
+  background-color: rgb(87, 86, 86);
+}
+.lightgrey {
+  background-color: rgb(170, 168, 168);
+}
+.green {
+  background-color: rgb(15, 245, 34);
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.backspace:hover {
+  background-color: aliceblue;
+  opacity: 0.5;
+  border-radius: 100%;
+}
