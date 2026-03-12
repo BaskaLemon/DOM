@@ -38,11 +38,7 @@ body {
   padding: 10px;
   gap: 20px;
 }
-.calculator {
-  height: 100px;
-  width: 100px;
-}
-.tip {
+.size {
   height: 100px;
   width: 100px;
 }

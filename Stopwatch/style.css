@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 47%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-weight: 600;
+  font-family: sans-serif;
+  position: relative;
+}
+.back {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+.stopwatch {
+  background-color: #602c83;
+  height: 450px;
+  width: 800px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.name {
+  color: white;
+  font-size: 50px;
+}
+.timer {
+  color: white;
+  font-size: 80px;
+}
+.txt {
+  font-size: 20px;
+  color: white;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.start {
+  height: 50px;
+  width: 150px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start:hover {
+  opacity: 0.7;
+}

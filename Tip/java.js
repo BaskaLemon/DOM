@@ -17,11 +17,17 @@ billInput.addEventListener("input", () => {
   billInput.value = sanitizeBillInput(billInput.value);
 });
 tips.addEventListener("click", (event) => {
-  mustpay.value =
-    (billInput.value * event.target.textContent.replace("%", " ")) / 100;
-  let num = parseFloat(mustpay.value);
-  let num1 = parseFloat(billInput.value);
-  mustpay.innerHTML = `Amount: ${num + num1}$`;
+  if (event.target.tagName != "DIV") {
+    return;
+  } else if (billInput.value.length === 0) {
+    alert("Bill input is empty");
+  } else {
+    mustpay.value =
+      (billInput.value * event.target.textContent.replace("%", " ")) / 100;
+    let num = parseFloat(mustpay.value);
+    let num1 = parseFloat(billInput.value);
+    mustpay.innerHTML = `Amount: ${num + num1}$`;
+  }
 });
 reset.addEventListener("click", () => {
   mustpay.innerText = "Amount: 0.00";
