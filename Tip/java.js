@@ -1,6 +1,5 @@
 const billInput = document.getElementById("bill-input");
 const tips = document.getElementById("tips");
-
 const reset = document.getElementById("reset");
 const mustpay = document.getElementById("mustpay");
 const sanitizeBillInput = (input) => {
